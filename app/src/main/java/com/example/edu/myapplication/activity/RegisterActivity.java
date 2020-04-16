@@ -124,21 +124,30 @@ public class RegisterActivity extends AppCompatActivity {
             String userpassword_str = registerPassword.getText().toString();
             String repassword_str = registerRepassword.getText().toString();
             String phone = phonenum.getText().toString();
-
-            if (userpassword_str.equals(repassword_str)) {
-                ContentValues values = new ContentValues();
-                //组装数据
-                values.put("name", username_str);
-                values.put("password", userpassword_str);
-                values.put("phonenum",phone);
-                db.insert("User", null, values);
-
-                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
-                finish();
-            } else {
-                Toast.makeText(RegisterActivity.this, "两次密码不一致，请重新输入", Toast.LENGTH_SHORT).show();
+            if("".equals(userpassword_str)||"".equals(username_str))
+            {
+                Toast.makeText(RegisterActivity.this,"账号和密码不能为空",Toast.LENGTH_SHORT).show();
             }
-            db.close();
+            else {
+                if (userpassword_str.equals(repassword_str)) {
+                    if(phone.length()==11) {
+                        ContentValues values = new ContentValues();
+                        //组装数据
+                        values.put("name", username_str);
+                        values.put("password", userpassword_str);
+                        values.put("phonenum", phone);
+                        db.insert("User", null, values);
+
+                        startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                        finish();
+                    }else {
+                        Toast.makeText(RegisterActivity.this, "请输入11位的电话号码", Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    Toast.makeText(RegisterActivity.this, "两次密码不一致，请重新输入", Toast.LENGTH_SHORT).show();
+                }
+                db.close();
+            }
         }else {
             Toast.makeText(RegisterActivity.this, "请勾选同意使用条款", Toast.LENGTH_SHORT).show();
         }
