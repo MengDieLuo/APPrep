@@ -88,7 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
         switch (requestCode) {
             case CHOSSE_PHOTO:
                 if (resultCode == -1) {
-                    String imgPath = AllUtil.handleImageOnKitKat(this, data);
+                    String imgPath = AllUtil.handleImageOnKitKat(RegisterActivity.this, data);
                     setHead(imgPath);
                 }
                 break;
@@ -103,8 +103,9 @@ public class RegisterActivity extends AppCompatActivity {
             Bitmap round = AllUtil.toRoundBitmap(bitmap);
             try {
                 String path = getCacheDir().getPath();
+
                 File file = new File(path,"user_head");
-                round.compress(Bitmap.CompressFormat.JPEG, 100, new FileOutputStream(file));
+                round.compress(Bitmap.CompressFormat.JPEG, 100, new FileOutputStream(file));//压缩图片
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }

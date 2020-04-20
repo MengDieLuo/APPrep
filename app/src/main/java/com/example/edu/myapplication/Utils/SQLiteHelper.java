@@ -22,7 +22,7 @@ public class SQLiteHelper extends SQLiteOpenHelper{
             + "news_url text)";
 
 
-    String CREAT_TABLE="create table t_user(id INTEGER primary key  autoincrement,username varchar(50),password varchar(50))";
+    String CREAT_TABLE="create table t_user(id INTEGER primary key  autoincrement,username varchar(50),password varchar(50),phonenum varchar(50))";
     public SQLiteHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
         mContext = context;

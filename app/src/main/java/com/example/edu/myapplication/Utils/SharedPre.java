@@ -54,10 +54,7 @@ public class SharedPre {
         return null;
     }
 
-    /**
-     * @param context
-     * @param key
-     */
+
     public static void removeParam(Context context, String key) {
         SharedPreferences sp = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
