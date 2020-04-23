@@ -9,27 +9,27 @@
 
     <application
         android:allowBackup="true"
-        android:label="@string/app_name"
         android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
         android:largeHeap="true"
         android:roundIcon="@mipmap/app_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="com.example.edu.News.activity.splashActivity">
+        <activity android:name=".activity.splashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.edu.News.activity.CollectActivity" />
-        <activity android:name="com.example.edu.News.activity.CoverActivity" />
-        <activity android:name="com.example.edu.News.activity.EditmineActivity" />
-        <activity android:name="com.example.edu.News.activity.MainActivity" />
-        <activity android:name="com.example.edu.News.activity.ShowNewsActivity" />
-        <activity android:name="com.example.edu.News.activity.LoginActivity" />
-        <activity android:name="com.example.edu.News.activity.RegisterActivity" />
-        <activity android:name="com.example.edu.News.activity.lodingActivity" />
+        <activity android:name=".activity.CollectActivity" />
+        <activity android:name=".activity.CoverActivity" />
+        <activity android:name=".activity.EditmineActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.ShowNewsActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.lodingActivity" />
     </application>
 
 </manifest>
