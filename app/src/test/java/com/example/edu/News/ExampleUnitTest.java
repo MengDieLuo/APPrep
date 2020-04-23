@@ -1,4 +1,4 @@
-package com.example.edu.myapplication;
+package com.example.edu.News;
 
 import org.junit.Test;
 

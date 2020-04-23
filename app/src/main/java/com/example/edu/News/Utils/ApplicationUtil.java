@@ -1,4 +1,4 @@
-package com.example.edu.myapplication.Utils;
+package com.example.edu.News.Utils;
 
 import android.app.Activity;
 import android.app.Application;

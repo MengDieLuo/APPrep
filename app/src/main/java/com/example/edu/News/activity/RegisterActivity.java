@@ -1,4 +1,4 @@
-package com.example.edu.myapplication.activity;
+package com.example.edu.News.activity;
 
 import android.Manifest;
 import android.content.ContentValues;
@@ -15,10 +15,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.edu.myapplication.R;
-import com.example.edu.myapplication.Utils.AllUtil;
-import com.example.edu.myapplication.Utils.ApplicationUtil;
-import com.example.edu.myapplication.Utils.SQLiteHelper;
+import com.example.edu.News.R;
+import com.example.edu.News.Utils.AllUtil;
+import com.example.edu.News.Utils.ApplicationUtil;
+import com.example.edu.News.Utils.SQLiteHelper;
 
 import java.io.File;
 import java.io.FileNotFoundException;

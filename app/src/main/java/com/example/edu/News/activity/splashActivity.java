@@ -1,4 +1,4 @@
-package com.example.edu.myapplication.activity;
+package com.example.edu.News.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,8 +7,8 @@ import android.os.Message;
 import android.view.WindowManager;
 import android.widget.Button;
 
-import com.example.edu.myapplication.R;
-import com.example.edu.myapplication.Utils.SharedPre;
+import com.example.edu.News.R;
+import com.example.edu.News.Utils.SharedPre;
 
 import androidx.appcompat.app.AppCompatActivity;
 import butterknife.BindView;
